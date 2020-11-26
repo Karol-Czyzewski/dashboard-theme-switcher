@@ -1,0 +1,19 @@
+.main-socials {
+
+    &__header {
+        background-color: $very-pale-blue;
+        margin: 0;
+        padding-top: 3rem;
+
+        &--title {
+            margin-top: 0;
+        }
+    }
+
+    &__list {
+
+        .social-fb {
+            background-color: $light-grayish-blue;
+        }
+    }
+}
