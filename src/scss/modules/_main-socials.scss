@@ -29,7 +29,12 @@
         column-gap: 26px;
 
         .social {
+            align-items: center;
             background-color: $light-grayish-blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
             height: 250px;
         }
     }
