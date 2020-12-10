@@ -1,13 +1,55 @@
-@mixin social-name {
-    align-items: center;
-    color: $dark-grayish-blue;
-    display: flex;
-    font-size: 12px;
-    font-weight: 700;
-    justify-content: center;
+@mixin social-card {
+    &__name {
+        align-items: center;
+        color: $dark-grayish-blue;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        justify-content: center;
 
-    &--img {
-        margin-right: 8px;
+        &--img {
+            margin-right: 8px;
+        }
+    }
+
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 52px;
+        font-weight: 700;
+        margin: 0;
+
+        &--folow {
+            color: $dark-grayish-blue;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+    }
+
+    &__status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        &--img {
+            margin-right: 6px;
+        }
+
+        &--number-green {
+            color: $lime-green;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        &--number-red {
+            color: $bright-red;
+            font-weight: 700;
+            font-size: 12px;
+        }
     }
 }
 
@@ -54,66 +96,34 @@
             }
 
             &-fb {
+                @include social-card;
 
                 &::before {
                     background-color: $facebook;
                 }
+            }
 
-                &__name {
-                    @include social-name;
-                }
+            &-twit {
+                @include social-card;
 
-                &__number {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    font-size: 52px;
-                    font-weight: 700;
-                    margin: 0;
-
-                    &--folow {
-                        color: $dark-grayish-blue;
-                        font-size: 14px;
-                        font-weight: 400;
-                        letter-spacing: 4px;
-                    }
-                }
-
-                &__status {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-
-                    &--img {
-                        margin-right: 6px;
-                    }
-
-                    &--number-green {
-                        color: $lime-green;
-                        font-weight: 700;
-                        font-size: 12px;
-                    }
-
-                    &--number-red {
-                        color: $bright-red;
-                        font-weight: 700;
-                        font-size: 12px;
-                    }
+                &::before {
+                    background-color: $twitter;
                 }
             }
 
-            &-twit__name {
-                @include social-name;
+            &-inst {
+                @include social-card;
+                &::before {
+                    background: $instagram;
+                }
             }
 
-            &-inst__name {
-                @include social-name;
-            }
+            &-yt {
+                @include social-card;
 
-            &-yt__name {
-                @include social-name;
+                &::before {
+                    background-color: $youtube;
+                }
             }
         }
     }
