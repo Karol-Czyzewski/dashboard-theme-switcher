@@ -1,9 +1,10 @@
 @import "~normalize.css";
 @import "_variables";
+@import "_mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @import "./modules/body";
 @import "./modules/dashboard";
 @import "./modules/main-socials";
-@import "./modules/overview";
+@import "./modules/cards";
