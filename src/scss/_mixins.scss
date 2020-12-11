@@ -13,12 +13,13 @@
     }
 
     &__number {
-        display: flex;
-        justify-content: center;
         align-items: center;
+        color:$very-dark;
+        display: flex;
         flex-direction: column;
         font-size: 52px;
         font-weight: 700;
+        justify-content: center;
         margin: 0;
 
         &--folow {
@@ -51,4 +52,62 @@
             font-size: 12px;
         }
     }
+}
+
+@mixin card {
+
+        background-color: $light-grayish-blue;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 128px;
+
+        &__title {
+            color: $dark-grayish-blue;
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            justify-content: space-between;
+            margin-left: 16px;
+
+            &--number {
+                color: $very-dark;
+                font-size: 48px;
+            }
+        }
+
+        &__stat {
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 700;
+            justify-content: space-between;
+            margin-right: 16px;
+
+            &--green {
+                color: $lime-green;
+            }
+
+            &--red {
+                color: $bright-red;
+            }
+
+            &--icon {
+                width: 18px;
+                height: 18px;
+            }
+
+            &--container {
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+            }
+
+            &--arrow {
+                margin-right: 4px;
+            }
+        }
 }

@@ -13,5 +13,5 @@
 }
 
 .card {
-    background-color: $light-grayish-blue;
+    @include card;
 }
