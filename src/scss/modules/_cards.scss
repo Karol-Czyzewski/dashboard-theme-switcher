@@ -1,0 +1,17 @@
+.cards {
+    &__title {
+        color: $dark-grayish-blue;
+        letter-spacing: 1px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 26px;
+        column-gap: 26px;
+    }
+}
+
+.card {
+    background-color: $light-grayish-blue;
+}
