@@ -8,12 +8,12 @@
         padding-bottom: 100px;
 
         &--title {
-            color: $very-dark;
+            color: var(--very-dark);
             margin-top: 0;
         }
 
         &--paragraph {
-            color: $dark-grayish-blue;
+            color: var(--dark-grayish-blue);
             font-weight: 700;
         }
 
@@ -24,13 +24,13 @@
            }
 
            &-text {
-            color: $dark-grayish-blue;
+            color: var(--dark-grayish-blue);
             font-weight: 700;
            }
 
            &-background {
                align-items: center;
-               background-color: $dark-grayish-blue;
+               background: var(--toggle-light);
                border-radius: 30px;
                border: none;
                margin-left: 10px;
@@ -41,10 +41,10 @@
            }
 
            &-switcher {
-               background-color: $very-pale-blue;
+               background-color: var(--very-pale-blue);
                border: none;
                position: absolute;
-               right: 6px;
+               left: 6px;
                border-radius: 50%;
                height: 20px;
                width: 20px;
@@ -60,7 +60,7 @@
 
         .social {
             align-items: center;
-            background-color: $light-grayish-blue;
+            background-color: var(--light-grayish-blue);
             border-radius: 10px;
             display: flex;
             flex-direction: column;
