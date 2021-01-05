@@ -66,6 +66,10 @@
         justify-content: space-between;
         height: 128px;
 
+        &:hover {
+            background-color: var(--hover-color);
+        }
+
         &__title {
             color: var(--dark-grayish-blue);
             display: flex;

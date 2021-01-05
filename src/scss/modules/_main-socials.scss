@@ -39,6 +39,9 @@
                height: 26px;
                display: flex;
                position: relative;
+               &:hover {
+                   background: linear-gradient(76deg, rgba(55,143,230,1) 24%, rgba(62,218,130,1) 68%);
+               }
            }
 
            &-switcher {
@@ -69,6 +72,10 @@
             text-align: center;
             height: 250px;
             position: relative;
+
+            &:hover {
+                background: var(--hover-color);
+            }
 
             &::before {
                 border-radius: 8px 8px 0 0 ;
