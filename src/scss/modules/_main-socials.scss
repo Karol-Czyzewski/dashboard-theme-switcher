@@ -19,8 +19,8 @@
 
         &--button {
             &-container {
-                display: flex;
                 align-items: center;
+                display: flex;
            }
 
            &-text {
@@ -39,6 +39,7 @@
                height: 26px;
                display: flex;
                position: relative;
+               outline: none;
                &:hover {
                    background: linear-gradient(76deg, rgba(55,143,230,1) 24%, rgba(62,218,130,1) 68%);
                }
@@ -71,7 +72,7 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-            height: 250px;
+            height: 200px;
             position: relative;
 
             &:hover {
