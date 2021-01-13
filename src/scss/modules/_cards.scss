@@ -9,6 +9,14 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         row-gap: 26px;
         column-gap: 26px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
